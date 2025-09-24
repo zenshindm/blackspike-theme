@@ -14,7 +14,34 @@
         "ctaLink": "#",
         "ctaLabel": "Book a call",
         "heroImage": "hero-screens.png"
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "Description Field",
+          "widget": "TextArea",
+          "name": "content"
+        },
+        {
+          "label": "CTA Label",
+          "widget": "input",
+          "name": "ctaLabel"
+        },
+        {
+          "label": "CTA Link",
+          "widget": "input",
+          "name": "ctaLink"
+        },
+        {
+          "label": "Hero Image",
+          "widget": "img",
+          "name": "heroImage"
+        }
+      ]
     },
     {
       "componentName": "Services Carousel",
@@ -52,7 +79,46 @@
             "ctaLink": "#"
           }
         ]
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "Services List",
+          "widget": "array",
+          "name": "services",
+          "arrayWidget": [
+            {
+              "label": "Service Title",
+              "widget": "input",
+              "name": "title"
+            },
+            {
+              "label": "Service Content",
+              "widget": "TextArea",
+              "name": "content"
+            },
+            {
+              "label": "Service Image",
+              "widget": "img",
+              "name": "image"
+            },
+            {
+              "label": "CTA Label",
+              "widget": "input",
+              "name": "ctaLabel"
+            },
+            {
+              "label": "CTA Link",
+              "widget": "input",
+              "name": "ctaLink"
+            }
+          ]
+        }
+      ]
     },
     {
       "componentName": "Client Components",
@@ -102,7 +168,31 @@
             "link": "https://www.blackspike.com/"
           }
         ]
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "Clients List",
+          "widget": "array",
+          "name": "clients",
+          "arrayWidget": [
+            {
+              "label": "Client Image",
+              "widget": "img",
+              "name": "image"
+            },
+            {
+              "label": "Client Link",
+              "widget": "input",
+              "name": "link"
+            }
+          ]
+        }
+      ]
     },
     {
       "componentName": "Quote Components",
@@ -113,7 +203,29 @@
         "image": "quote-man.jpg",
         "cite": "Sean Higgins",
         "role": "CTO, Interia"
-      }
+      },
+      "props": [
+        {
+          "label": "Quote Content",
+          "widget": "TextArea",
+          "name": "content"
+        },
+        {
+          "label": "Quote Image",
+          "widget": "img",
+          "name": "image"
+        },
+        {
+          "label": "Cite Name",
+          "widget": "input",
+          "name": "cite"
+        },
+        {
+          "label": "Cite Role",
+          "widget": "input",
+          "name": "role"
+        }
+      ]
     },
     {
       "componentName": "Case Studies Components",
@@ -147,7 +259,51 @@
             "image": "brighton.dog.png"
           }
         ]
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "Case Studies List",
+          "widget": "array",
+          "name": "caseStudies",
+          "arrayWidget": [
+            {
+              "label": "Case Study Title",
+              "widget": "input",
+              "name": "title"
+            },
+            {
+              "label": "Case Study Sector",
+              "widget": "input",
+              "name": "sector"
+            },
+            {
+              "label": "Case Study Description",
+              "widget": "TextArea",
+              "name": "content"
+            },
+            {
+              "label": "Case Study Link",
+              "widget": "input",
+              "name": "case_study_link"
+            },
+            {
+              "label": "Case Study CTA",
+              "widget": "input",
+              "name": "cta"
+            },
+            {
+              "label": "Case Study Image",
+              "widget": "img",
+              "name": "image"
+            }
+          ]
+        }
+      ]
     },
     {
       "componentName": "Testimonials Components",
@@ -197,7 +353,31 @@
             "handle": "talanbaptista"
           }
         ]
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "Testimonials List",
+          "widget": "array",
+          "name": "testimonials",
+          "arrayWidget": [
+            {
+              "label": "Testimonial Quote",
+              "widget": "TextArea",
+              "name": "quote"
+            },
+            {
+              "label": "Testimonial Handle",
+              "widget": "input",
+              "name": "handle"
+            }
+          ]
+        }
+      ]
     },
     {
       "componentName": "Pricing Components",
@@ -211,7 +391,7 @@
             "tag": "Most popular",
             "content": "One designer, 5 days a month",
             "cta": "Start free trial",
-            "price": 999,
+            "price": "999",
             "services": [
               {
                 "item": "Access to basic services"
@@ -235,7 +415,7 @@
             "tag": "Best value",
             "content": "One team, 5 days a month",
             "cta": "Enquire now",
-            "price": 2999,
+            "price": "2999",
             "services": [
               {
                 "item": "All basic plan services"
@@ -255,7 +435,58 @@
             ]
           }
         ]
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "Pricing List",
+          "widget": "array",
+          "name": "pricing",
+          "arrayWidget": [
+            {
+              "label": "Pricing Title",
+              "widget": "input",
+              "name": "title"
+            },
+            {
+              "label": "Pricing Tagline",
+              "widget": "input",
+              "name": "tag"
+            },
+            {
+              "label": "Pricing Description",
+              "widget": "TextArea",
+              "name": "content"
+            },
+            {
+              "label": "Pricing CTA",
+              "widget": "input",
+              "name": "cta"
+            },
+            {
+              "label": "Pricing Price",
+              "widget": "input",
+              "name": "price"
+            },
+            {
+              "label": "Services List",
+              "widget": "array",
+              "name": "services",
+              "arrayWidget": [
+                {
+                  "label": "Service Item",
+                  "widget": "input",
+                  "name": "item"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "componentName": "Faq Components",
@@ -285,7 +516,31 @@
             "answer": "Our platform is fully cloud-based for convenience and collaboration. However, you can export your designs for offline use in standard formats like SVG, OBJ, and HTML/CSS."
           }
         ]
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "FAQ List",
+          "widget": "array",
+          "name": "faq",
+          "arrayWidget": [
+            {
+              "label": "FAQ Question",
+              "widget": "input",
+              "name": "question"
+            },
+            {
+              "label": "FAQ Answer",
+              "widget": "TextArea",
+              "name": "answer"
+            }
+          ]
+        }
+      ]
     },
     {
       "componentName": "CTA Components",
@@ -295,7 +550,24 @@
         "title": "Need design?",
         "ctaLink": "#",
         "ctaLabel": "Book a call"
-      }
+      },
+      "props": [
+        {
+          "label": "Title Field",
+          "widget": "input",
+          "name": "title"
+        },
+        {
+          "label": "CTA Label",
+          "widget": "input",
+          "name": "ctaLabel"
+        },
+        {
+          "label": "CTA Link",
+          "widget": "input",
+          "name": "ctaLink"
+        }
+      ]
     }
   ]
 }
