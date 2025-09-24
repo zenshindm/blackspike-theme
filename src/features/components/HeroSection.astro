@@ -1,0 +1,32 @@
+---
+import ImgComp from "@/features/base/ImgComp.astro";
+const { title, content, ctaLink, ctaLabel, heroImage } = Astro.props;
+---
+
+<section class="bs-container py-6 flex flex-col lg:flex-row items-center">
+  <!-- Content -->
+  <div class="flex flex-col gap-6 lg:max-w-lg w-full py-16">
+    <!-- Title -->
+    <h1 class="z-10 bs-h1" set:html={title} />
+
+    <!-- Content -->
+    <div
+      class="z-10 bs-body-text xl:text-xl flex flex-col gap-4 [&_p]:last:text-bs-foreground-dark"
+      set:html={content}
+    />
+
+    <!-- CTA -->
+    <a href={ctaLink} class="bs-btn self-start bs-mt-sm">
+      {ctaLabel}
+    </a>
+  </div>
+
+  <!-- Image -->
+  <figure class="z-10 flex place-content-center -mt-20 lg:mt-0">
+    <ImgComp
+      src={heroImage}
+      alt="Screens showing phone, tablet and desktop views of our website"
+      loading="eager"
+    />
+  </figure>
+</section>

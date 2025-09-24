@@ -1,0 +1,19 @@
+---
+import websiteSetting from "@/features/websiteSetting.json";
+---
+
+<footer
+  class="@container bs-container my-24 font-semibold text-bs-foreground-dark [&_a]:hover:text-bs-foreground-light [&_a]:transition-color [&_a]:duration-150"
+>
+  <aside class="bs-container">
+    <nav class="flex gap-4 justify-center pt-16 md:pt-24 text-xs">
+      <!-- Copyright/Date -->
+      <a href="https://blackspike.com/">by blackspike.com</a>
+
+      <!-- Credits -->
+      <a href="/credits">about / credits</a>
+    </nav>
+  </aside>
+</footer>
+
+<Fragment set:html={websiteSetting.FooterInsertion} />

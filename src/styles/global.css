@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "blackspike";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+
+  --color-base-100: oklch(0.1822 0 0);
+  --color-base-200: oklch(0.2103 0.0059 285.89);
+  --color-base-300: oklch(1 0 0 / 3.14%);
+  --color-base-content: oklch(0.3227 0.0789 246.23);
+
+  --color-primary: oklch(0.306 0.0035 286.19);
+  --color-primary-content: oklch(0.9491 0 0);
+
+  --color-secondary: oklch(65% 0.241 354.308);
+  --color-secondary-content: oklch(94% 0.028 342.258);
+
+  --color-accent: oklch(77% 0.152 181.912);
+  --color-accent-content: oklch(38% 0.063 188.416);
+
+  --color-neutral: oklch(14% 0.005 285.823);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+
+  /* Border radius */
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* Base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* Border size */
+  --border: 1px;
+
+  /* Effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  --font-display: var(--font-inter-display), "ui-sans-serif", "system-ui",
+    "sans-serif";
+  --font-body: var(--font-inter), "ui-sans-serif", "system-ui", "sans-serif";
+  --color-bs-surface-0: #121212;
+  --color-bs-surface-1: #18181b;
+  --color-bs-surface-2: rgba(255, 255, 255, 0.03);
+  --color-bs-surface-3: #2f2f31;
+
+  --color-bs-foreground-light: #eee;
+  --color-bs-foreground-dark: #9f9f9f;
+  --color-current: currentColor;
+  --ease-bs-bounce: linear(
+    0,
+    0.01,
+    0.04 1.6%,
+    0.161 3.3%,
+    0.816 9.4%,
+    1.046,
+    1.189 14.4%,
+    1.231,
+    1.254 17%,
+    1.259,
+    1.257 18.6%,
+    1.236,
+    1.194 22.3%,
+    1.057 27%,
+    0.999 29.4%,
+    0.955 32.1%,
+    0.942,
+    0.935 34.9%,
+    0.933,
+    0.939 38.4%,
+    1 47.3%,
+    1.011,
+    1.017 52.6%,
+    1.016 56.4%,
+    1 65.2%,
+    0.996 70.2%,
+    1.001 87.2%,
+    1
+  );
+
+  --ease-bs-spring: linear(
+    0,
+    0.009,
+    0.035 2.1%,
+    0.141,
+    0.281 6.7%,
+    0.723 12.9%,
+    0.938 16.7%,
+    1.017,
+    1.077,
+    1.121,
+    1.149 24.3%,
+    1.159,
+    1.163,
+    1.161,
+    1.154 29.9%,
+    1.129 32.8%,
+    1.051 39.6%,
+    1.017 43.1%,
+    0.991,
+    0.977 51%,
+    0.974 53.8%,
+    0.975 57.1%,
+    0.997 69.8%,
+    1.003 76.9%,
+    1.004 83.8%,
+    1
+  );
+}
+
+@layer utilities {
+  .firstCol:nth-child(3n + 1) {
+    @apply lg:col-span-2;
+  }
+
+  .firstCol:nth-child(3n + 1) {
+    @apply lg:col-span-2 bg-gradient-to-r from-indigo-500 to-purple-600;
+  }
+  .firstCol:nth-child(3n + 2) {
+    @apply bg-gradient-to-r from-fuchsia-500 to-cyan-500;
+  }
+  .firstCol:nth-child(3n + 3) {
+    @apply bg-gradient-to-r from-pink-500 to-yellow-500;
+  }
+}

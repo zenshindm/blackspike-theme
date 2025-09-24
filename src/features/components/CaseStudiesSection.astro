@@ -1,0 +1,30 @@
+---
+import CardCaseStudy from "../base/CardCaseStudy.astro";
+
+const { title, caseStudies } = Astro.props;
+
+type CaseStudy = {
+  sector: string;
+  title: string;
+  content: string;
+  cta: string;
+  case_study_link: string;
+  image: string;
+};
+---
+
+<section class="bs-container bs-mt-lg" id="case-studies">
+  <!-- Header -->
+  {title && <h2 class="bs-h2 text-center md:text-left">{title}</h2>}
+
+  <!-- Case studies -->
+  <div class="mt-8 grid lg:grid-cols-2 gap-8">
+    {
+      caseStudies.map((caseStudy: CaseStudy) => (
+        <>
+          <CardCaseStudy caseStudy={caseStudy} />
+        </>
+      ))
+    }
+  </div>
+</section>

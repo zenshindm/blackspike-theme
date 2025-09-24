@@ -1,0 +1,61 @@
+---
+import websiteSetting from "@/features/websiteSetting.json";
+import ImgComp from "@/features/base/ImgComp.astro";
+import NavBarSide from "./NavBarSide.astro";
+
+type NavBarItem = singleType | dropdownType;
+
+type singleType = {
+  type: "single";
+  label: string;
+  link: string;
+};
+
+type dropdownType = {
+  type: "dropdown";
+  label: string;
+  link: string;
+  subNav: { label: string; link: string }[];
+};
+
+const navbarItems = websiteSetting.NavbarInsertion as NavBarItem[];
+---
+
+<header class="wrapper bg-loop font-semibold">
+  <div class="bs-container py-6 flex justify-between items-center">
+    <a
+      class="z-10 flex xl:min-w-32 group"
+      href="/"
+      aria-label="return to homepage"
+    >
+      <ImgComp
+        src={websiteSetting.websiteLogo1.src}
+        className="group-hover:-rotate-180 group-hover:scale-80 transition-transform ease-bs-spring duration-1000"
+        height="48"
+        width="48"
+      />
+    </a>
+    <nav class="hidden col-span-6 md:flex mx-auto self-stretch lg:gap-2">
+      {
+        navbarItems.map((item) => (
+          <>
+            {item.type === "single" ? (
+              <a
+                class="bs-btn !bg-transparent before:translate-y-full hover:before:translate-y-0"
+                href={item.link}
+              >
+                {item.label}
+              </a>
+            ) : null}
+          </>
+        ))
+      }
+    </nav>
+    <div class="flex gap-4 items-center justify-center">
+      <NavBarSide />
+      <a href={websiteSetting.ctaLink.link} class="z-10 min-w-32 bs-btn">
+        {websiteSetting.ctaLink.label}
+      </a>
+    </div>
+  </div>
+</header>

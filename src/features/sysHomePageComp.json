@@ -1,0 +1,301 @@
+{
+  "pageTitle": "Product design that WOW",
+  "pageDescription": "To create products that don't just meet expectations",
+  "PageImage": "business.jpg",
+  "PageLayout": "DefaultLayout",
+  "compData": [
+    {
+      "componentName": "Hero Components",
+      "componentModule": "HeroSection",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "blackspike astro landing page",
+        "content": "A free Astro landing theme made with Tailwind to help kick start your Astro website. Uses modern CSS and HTML features for added zip, plus a slick swiper carousel. All in Astro JSX.",
+        "ctaLink": "#",
+        "ctaLabel": "Book a call",
+        "heroImage": "hero-screens.png"
+      }
+    },
+    {
+      "componentName": "Services Carousel",
+      "componentModule": "ServicesCarousel",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "blackspike astro landing page",
+        "services": [
+          {
+            "title": "We create timeless visual identities for modern brands.",
+            "content": "Great companies are built on their ability to adapt and grow. We create brands that will adapt and flourish no matter where the market takes you.",
+            "image": "blackspike-wallpaper-01.jpg",
+            "ctaLabel": "Call us about branding",
+            "ctaLink": "#"
+          },
+          {
+            "title": "We design websites that drive conversions and delight users.",
+            "content": "Experts in imagining future interfaces and experiences. From UX to creative to analytics, we are there every step of the way.",
+            "image": "blackspike-wallpaper-02.jpg",
+            "ctaLabel": "Book a website review call",
+            "ctaLink": "#"
+          },
+          {
+            "title": "Design across all dimensions",
+            "content": "Outstanding 3D design and concepts. We provide top-of-the-line 3D modelling services delivered by our skilled team of 3D artists.",
+            "image": "blackspike-wallpaper-03.jpg",
+            "ctaLabel": "Our 3D Services",
+            "ctaLink": "#"
+          },
+          {
+            "title": "Apps for all devices and seasons",
+            "content": "We help companies supercharge their apps by providing world-class, effective design. Best practice design processes for your products.",
+            "image": "blackspike-wallpaper-04.jpg",
+            "ctaLabel": "Arrange an app demo",
+            "ctaLink": "#"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "Client Components",
+      "componentModule": "ClientsSection",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "blackspike astro landing page",
+        "clients": [
+          {
+            "image": "logo-01.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-02.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-03.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-04.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-05.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-06.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-07.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-08.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-09.svg",
+            "link": "https://www.blackspike.com/"
+          },
+          {
+            "image": "logo-10.svg",
+            "link": "https://www.blackspike.com/"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "Quote Components",
+      "componentModule": "QuoteSection",
+      "componentImg": "holder.png",
+      "data": {
+        "content": "This design agency is a game change. Its creative vision, user-focused approach, and seamless collaboration have transformed the way we build our brand. It's not just an agency — it's a powerful partner that delivers real results.",
+        "image": "quote-man.jpg",
+        "cite": "Sean Higgins",
+        "role": "CTO, Interia"
+      }
+    },
+    {
+      "componentName": "Case Studies Components",
+      "componentModule": "CaseStudiesSection",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "Case studies",
+        "caseStudies": [
+          {
+            "title": "Powering Growth.<br>Simplifying Success.",
+            "sector": "Web design",
+            "content": "Our custom web design solution helped Biotechlet Ltd elevate its digital presence with a clean, modern interface and intuitive user experience. <br><br>The redesigned site streamlined user journeys, improved accessibility, and strengthened brand credibility.",
+            "case_study_link": "https://www.spike.news",
+            "cta": "Visit spike.news",
+            "image": "spike.news.png"
+          },
+          {
+            "title": "Accelerating Innovation.<br>Empowering Results.",
+            "sector": "Development",
+            "content": "Our dynamic design and build simplified productivity, delivering automated solutions, seamless collaboration, and data-driven insights",
+            "case_study_link": "https://pixelate.pictures",
+            "cta": "Visit pixelate.pictures",
+            "image": "pixelate.pictures.png"
+          },
+          {
+            "title": "Enhance productivity,<br>boost efficiency.",
+            "sector": "3D Design",
+            "content": "Create, collaborate, and render — all in one streamlined workflow. Teams are connected and producing stunning visuals in minutes.",
+            "case_study_link": "https://www.brighton.dog",
+            "cta": "Visit brighton.dog",
+            "image": "brighton.dog.png"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "Testimonials Components",
+      "componentModule": "TestimonialsSection",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "Clients ♥ us",
+        "testimonials": [
+          {
+            "quote": "Sent over a logo request and had a polished concept in minutes—this team is pure magic!",
+            "handle": "daviscarder"
+          },
+          {
+            "quote": "Clicked a few buttons in the 3D design tool, and boom—my model came to life!",
+            "handle": "kadinwestervelt"
+          },
+          {
+            "quote": "Website setup took 2 minutes. I was live instantly. This is a game-changer! Everything from the layout to the mobile responsiveness worked flawlessly right out of the box. I didn't need a developer or any technical skills — just a few clicks, and we were online with a stunning, professional site.",
+            "handle": "kaylynnkenter"
+          },
+          {
+            "quote": "Sent a link to preview the design, and everything just worked. Super simple and fast!",
+            "handle": "ryanstanton"
+          },
+          {
+            "quote": "Launched the new logo in no time. Reactions were instant. Feels like magic! The process was smooth from start to finish — the design team understood our vision perfectly, and the final result captured our brand's personality better than we imagined. We've had compliments pouring in ever since.",
+            "handle": "erincalzoni"
+          },
+          {
+            "quote": "Uploaded our 3D assets and shared them with the team within minutes. It's ridiculously easy!",
+            "handle": "jaxsonlipshutz"
+          },
+          {
+            "quote": "Followed the website launch guide, and it just worked—like magic!",
+            "handle": "charlieherwitz"
+          },
+          {
+            "quote": "Clicked 'Share' on the design prototype, and we were reviewing in moments. Amazing simplicity!",
+            "handle": "tianakorsgaard"
+          },
+          {
+            "quote": "Logged in, shared our new logo package, and instantly got feedback. Couldn't be easier!",
+            "handle": "jaydonkorsgaard"
+          },
+          {
+            "quote": "Uploaded the logo, and the final render was instant. It's seriously impressive!",
+            "handle": "talanbaptista"
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "Pricing Components",
+      "componentModule": "PricingSection",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "We do design retainers",
+        "pricing": [
+          {
+            "title": "Basic plan",
+            "tag": "Most popular",
+            "content": "One designer, 5 days a month",
+            "cta": "Start free trial",
+            "price": 999,
+            "services": [
+              {
+                "item": "Access to basic services"
+              },
+              {
+                "item": "Basic assets and logos"
+              },
+              {
+                "item": "Up to 10 individual assets"
+              },
+              {
+                "item": "Teams/slack chat"
+              },
+              {
+                "item": "Cancel Anytime"
+              }
+            ]
+          },
+          {
+            "title": "Enterprise plan",
+            "tag": "Best value",
+            "content": "One team, 5 days a month",
+            "cta": "Enquire now",
+            "price": 2999,
+            "services": [
+              {
+                "item": "All basic plan services"
+              },
+              {
+                "item": "100 assets"
+              },
+              {
+                "item": "Advanced reporting and analytics"
+              },
+              {
+                "item": "Up to 30 individual renders"
+              },
+              {
+                "item": "120GB storage allowance"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "Faq Components",
+      "componentModule": "FaqSection",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "Frequently Asked Questions",
+        "faq": [
+          {
+            "question": "How secure is my design data?",
+            "answer": "We use industry-standard encryption and secure storage practices to protect your creative assets. All files are encrypted with AES-256, and our servers are regularly monitored and updated to prevent vulnerabilities."
+          },
+          {
+            "question": "Is there a free trial for design services?",
+            "answer": "Yes, we offer a 14-day free trial for our design platform with access to core features for logo design, 3D modelling, or website prototyping—no credit card required."
+          },
+          {
+            "question": "Can I integrate your tools with other platforms?",
+            "answer": "Absolutely. Our design tools integrate with popular platforms like Figma, Adobe Creative Cloud, Sketch, Blender, and CMS systems like WordPress and Webflow."
+          },
+          {
+            "question": "What kind of support do you provide for design projects?",
+            "answer": "We provide 24/7 support via chat and email, along with a detailed help center full of tutorials, design best practices, and walkthroughs for each service."
+          },
+          {
+            "question": "Do you offer offline or on-premise design tools?",
+            "answer": "Our platform is fully cloud-based for convenience and collaboration. However, you can export your designs for offline use in standard formats like SVG, OBJ, and HTML/CSS."
+          }
+        ]
+      }
+    },
+    {
+      "componentName": "CTA Components",
+      "componentModule": "Call2Action",
+      "componentImg": "holder.png",
+      "data": {
+        "title": "Need design?",
+        "ctaLink": "#",
+        "ctaLabel": "Book a call"
+      }
+    }
+  ]
+}
