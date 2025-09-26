@@ -133,9 +133,9 @@ export async function optimizeImagesInString(htmlString: string) {
         const deSource = String(`/src/assets/${src}`);
         const optimizedImage = await getImage({
           src: imageImports[deSource],
-          width: 800,
-          height: 600,
-          format: "webp",
+          width: 900,
+          height: 400,
+          format: "avif",
           quality: 80,
         });
 
